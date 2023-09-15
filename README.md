@@ -1,6 +1,6 @@
 # ETS
 Repositorio para el modulo de ETS
-<img src = "images/prueba.png">
+<img src = "images/Prueba.drawio.png">
 <br>
 -[images](images)
 ## Unidades
