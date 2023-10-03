@@ -148,7 +148,7 @@ git commit -m "Añadido los capitulos 3"
 - Salida:
 ```code
 dam@a108pc01:~/Documentos/dpl$ cat >indice.txt
-Capítulo 1: Instalación de Git por el alumno XXX _(donde XXX es el nombre del alumno)_
+Capítulo 1: Instalación de Git por el alumno Adonay _(donde Adonay es el nombre del alumno)_
 Capítulo 2: Flujo de trabajo básico
 Capítulo 3: Gestión de ramas
                                             
@@ -161,7 +161,7 @@ index ff4210e..b364195 100644
 @@ -1,2 +1,5 @@
 -Capitulo 1: Instalacion de Git por el Alumno Adonay
 -Capitulo 2: Flujo de trabajo basico
-+Capítulo 1: Instalación de Git por el alumno XXX _(donde XXX es el nombre del alumno)_
++Capítulo 1: Instalación de Git por el alumno Adonay_(donde Adonay es el nombre del alumno)_
 +Capítulo 2: Flujo de trabajo básico
 +Capítulo 3: Gestión de ramas
 +
@@ -197,7 +197,7 @@ index ff4210e..b364195 100644
 @@ -1,2 +1,5 @@
 -Capitulo 1: Instalacion de Git por el Alumno Adonay
 -Capitulo 2: Flujo de trabajo basico
-+Capítulo 1: Instalación de Git por el alumno XXX _(donde XXX es el nombre del alumno)_
++Capítulo 1: Instalación de Git por el alumno Adonay_(donde Adonay es el nombre del alumno)_
 +Capítulo 2: Flujo de trabajo básico
 +Capítulo 3: Gestión de ramas
 +
@@ -221,7 +221,7 @@ index ff4210e..b364195 100644
 @@ -1,2 +1,5 @@
 -Capitulo 1: Instalacion de Git por el Alumno Adonay
 -Capitulo 2: Flujo de trabajo basico
-+Capítulo 1: Instalación de Git por el alumno XXX _(donde XXX es el nombre del alumno)_
++Capítulo 1: Instalación de Git por el alumno Adonay _(donde Adonay es el nombre del alumno)_
 +Capítulo 2: Flujo de trabajo básico
 +Capítulo 3: Gestión de ramas
 +
