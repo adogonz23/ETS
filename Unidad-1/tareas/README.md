@@ -5,7 +5,7 @@
 ## indice
 
 [Tareas de Configuracion](##Taraedeconfiracion)
-
+[Tarea: Creacion de repositorio](##Tarea:Creaciondeunrepositorio)
 ## Tarea de configuracion
 
 Configurar Git definiendo el nombre del usuario, el correo electrónico y activar el coloreado de la salida. Mostrar la configuración final.
