@@ -1,254 +1,128 @@
 <div aling= "center">
 
-# Gestion basica de git
+# Gestion avanzada de git
 
 ## indice
-- [Tarea de configuracion](#item1)
-- [ Tarea: Creación de un repositorio](#item2)
-- [Tarea: Comprobar el estado del repositorio](#item3)
-- [Tarea: Realizando Commit´s](#item4)
-- [Tarea: Modificación de ficheros](#item5)
-- [Tarea: Historial](#item6)
+- [Ejercicio 1](#item1)
+- [Ejercicio 2](#item2)
+- [Ejercicio 3](#item3)
+- [Ejercicio 4](#item4)
+- [Ejercicio 5](#item5)
+- [Ejercicio 6](#item6)
 
-## Tarea de configuracion
+
+## Clonando el repositorio del profe
+```code
+am@a108pc01:~$ cd Documentos/
+dam@a108pc01:~/Documentos$  git clone https://github.com/jpexposito/libro.git
+Clonando en 'libro'...
+remote: Enumerating objects: 21, done.
+remote: Counting objects: 100% (21/21), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 21 (delta 2), reused 13 (delta 0), pack-reused 0
+Recibiendo objetos: 100% (21/21), listo.
+Resolviendo deltas: 100% (2/2), listo.
+dam@a108pc01:~/Documentos$ cd libro/
+
+```
+
 <a name="item1"></a>
 
-Configurar Git definiendo el nombre del usuario, el correo electrónico y activar el coloreado de la salida. Mostrar la configuración final.
+## Ejercicio 1 
 
-```code 
-  git config --global user.name "Your-Full-Name"
-  git config --global user.email "your-email-address"
-  git config --global color.ui auto
-  git config --list
+- Mostrar el historial de cambios del repositorio.
+- Crear la carpeta capítulos y crear dentro de ella el fichero capitulo1.txt con el siguiente texto: "Git es un sistema de control de versiones ideado por Linus Torvalds."
+  - __comandos:__"git show" "mkdir capitulos" "cat > capitulos/capitulo.txt"
+  
+```code
+dam@a108pc01:~/Documentos/libro$ git show
+commit 1016a8a4e53ee1167750094aaac7d2018063a264 (HEAD -> main, origin/main, origin/HEAD)
+Author: Joatham Pérez Expósito <jpe.gsc@gmail.com>
+Date:   Wed Sep 27 15:50:15 2023 +0100
+
+    se añade la segunda carpeta
+
+diff --git a/prueba2/file2.clean b/prueba2/file2.clean
+new file mode 100644
+index 0000000..e69de29
+dam@a108pc01:~/Documentos/libro$ mkdir capitulos
+dam@a108pc01:~/Documentos/libro$ cat > capitulos/capitulo.txt
+Git es un sistema de control de versiones ideado por Linus Torvalds.dam@a108pc01:~/Documentos/libro$ 
 ```
-## Tarea: Creación de un repositorio
+
+- Añadir los cambios a la zona de intercambio temporal.
+- Hacer un commit de los cambios con el mensaje Añadido capítulo 1.
+- Volver a mostrar el historial de cambios del repositorio.
+  - __Comandos:__ "git add ." "git commit -m" "git show"
+
+```code
+~/Documentos/libro$ git add .
+dam@a108pc01:~/Documentos/libro$ git commit -m"aguacate"
+[main e117b9b] aguacate
+ 1 file changed, 1 insertion(+)
+ create mode 100644 capitulos/capitulo.txt
+dam@a108pc01:~/Documentos/libro$ git show
+commit e117b9b4099b39a3dbe5f18ba5ccc10ef22bb79d (HEAD -> main)
+Author: adogonz23 <adogonzalez75@gmail.com>
+Date:   Wed Oct 4 16:10:27 2023 +0100
+
+    aguacate
+
+diff --git a/capitulos/capitulo.txt b/capitulos/capitulo.txt
+new file mode 100644
+index 0000000..f4068a7
+--- /dev/null
++++ b/capitulos/capitulo.txt
+@@ -0,0 +1 @@
+Git es un sistema de control de versiones ideado por Linus Torvalds.
+\ No newline at end of file
+
+```
 <a name="item2"></a>
-Crear un repositorio nuevo con el nombre dpl y mostrar su contenido.
-- __Anotaciones__:  "mkdir" comando para la creacion del repositorio
-```code
- mkdir dpl
- cd dpl
-```
-- __Salida:__
-```
- dam@a108pc01:~/Documentos$ mkdir dpl
- dam@a108pc01:~/Documentos$ cd dpl
-```
-- __Anotaciones__:"git init" inicializa el repositorio y "git ls -la" muestra los archivos dentro del repositorio 
 
-```code
-- git init
-- ls -la
-```
-- __Salida:__
-```
- dam@a108pc01:~/Documentos/dpl$ ls -la
- total 8
- drwxrwxr-x 2 dam dam 4096 oct  3 14:57 .
- drwxr-xr-x 8 dam dam 4096 oct  3 14:57 ..
- dam@a108pc01:~/Documentos/dpl$ git init
- ayuda: Usando 'master' como el nombre de la rama inicial. Este nombre de rama predeterminado
- ayuda: está sujeto a cambios. Para configurar el nombre de la rama inicial - para usar en todos
- ayuda: de sus nuevos repositorios, reprimiendo esta advertencia, llama a:
-ayuda: 
- ayuda: 	git config --global init.defaultBranch <nombre>
-ayuda: 
- ayuda: Los nombres comúnmente elegidos en lugar de 'master' son 'main', 'trunk' y
- ayuda: 'development'. Se puede cambiar el nombre de la rama recién creada mediante este comando:
-ayuda: 
- ayuda: 	git branch -m <nombre>
- Inicializado repositorio Git vacío en /home/dam/Documentos/dpl/.git/
-```
-<a name="item3"></a>
-## Tarea: Comprobar el estado del repositorio
-- Comprobar el estado del repositorio.
+ ## Ejercicio 2
 
-- Crear un fichero indice.txt con el siguiente contenido:
+- Crear el fichero capitulo2.txt en la carpeta capítulos con el siguiente texto: "El flujo de trabajo básico con Git consiste en: 1- Hacer cambios en el repositorio. 2- Añadir los cambios a la zona de intercambio temporal. 3- Hacer un commit de los cambios".
+  - __Comandos:__ "cat > capitulos/capitulo2.txt"
+<detail>
+  ```code
+    dam@a108pc01:~/Documentos/libro$ cat > capitulos/capitulo2
+  El flujo de trabajo básico con Git consiste en: 1- Hacer cambios en el repositorio. 2- Añadir los cambios a la zona de intercambio temporal. 3- Hacer un commit de los cambios
+  ```
+</detail>
 
-  - Capítulo 1: Instalación de Git por el alumno XXX (donde XXX es el nombre del alumno).
-  - Capítulo 2: Flujo de trabajo básico.
+- Añadir los cambios a la zona de intercambio temporal.
+- Hacer un commit de los cambios con el mensaje Añadido capítulo 2.
+- Mostrar las diferencias entre la última versión y dos versiones anteriores.
+  - __Comandos__:"git add .", "git commit-m", "git diff HEAD~2..HEAD "
+  ```code
+  dam@a108pc01:~/Documentos/libro$ git add .
+  dam@a108pc01:~/Documentos/libro$ git commit -m"Aguacates2"
+  [main f05e0fb] Aguacates2
+  1 file changed, 1 insertion(+)
+  create mode 100644 capitulos/capitulo2
+  dam@a108pc01:~/Documentos/libro$ git diff HEAD~2..HEAD
+  diff --git a/capitulos/capitulo.txt b/capitulos/capitulo.txt
+  new file mode 100644
+  index 0000000..f4068a7
+  --- /dev/null
+  +++ b/capitulos/capitulo.txt
+  @@ -0,0 +1 @@
+  +Git es un sistema de control de versiones ideado por Linus Torvalds.
+  \ No newline at end of file
+  diff --git a/capitulos/capitulo2 b/capitulos/capitulo2
+  new file mode 100644
+  index 0000000..e13c7d8
+  --- /dev/null
+  +++ b/capitulos/capitulo2
+  @@ -0,0 +1 @@
+  +El flujo de trabajo básico con Git consiste en: 1- Hacer cambios en el repositorio. 2- Añadir los cambios a la zona de intercambio temporal. 3- Hacer un commit de los cambios
+  \ No newline at end of file
+
+  ```
 
 
-- Comprobar de nuevo el estado del repositorio.
 
-- Añadir el fichero a la zona de intercambio temporal.
 
-- Volver a comprobar una vez más el estado del repositorio.
-
-```code
-git status
-```
-- __Salida:__
-```code
- dam@a108pc01:~/Documentos/dpl$  git status
-En la rama master
-
-No hay commits todavía no hay nada para confirmar (crea/copia archivos y usa "git add" para hacerles seguimiento)
-```
-- __Anotaciones__: "cat > nombrex.txt" crear un archivo y añadirle contenido  
-```code
- cat > indice.txt
- Capítulo 1: Instalación de Git por el alumno XXX
- Capítulo 2: Flujo de trabajo básico
-```
-- __Salida:__
-```code
-dam@a108pc01:~/Documentos/dpl$ cat > indice.txt
-Capitulo 1: Instalacion de Git por el Alumno Adonay
-Capitulo 2: Flujo de trabajo basico 
-```
-```code
-git status
-git add indice.txt
-git status
-```
-- __Salida:__
-```code
-dam@a108pc01:~/Documentos/dpl$ git status
-En la rama master
-
-No hay commits todavía
-
-Archivos sin seguimiento:
-  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
-	indice.txt
-
-no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
-dam@a108pc01:~/Documentos/dpl$ git add indice.txt
-dam@a108pc01:~/Documentos/dpl$ git status
-En la rama master
-
-No hay commits todavía
-
-Cambios a ser confirmados:
-  (usa "git rm --cached <archivo>..." para sacar del área de stage)
-	nuevos archivos: indice.txt
-```
-<a name="item4"></a>
-## Tarea: Realizando Commit´s
-
-Realizar un commit de los últimos cambios con el mensaje Añadido índice de la asignatura DPL. y ver el estado del repositorio.
-- __Anotaciones__:"git commit-m" te permite guardar los cambios realizados en la rama
-```code
-git commit -m "Añadido índice de la asignatura DPL."
-git status
-```
-
-- __Salida:__
-```code
-dam@a108pc01:~/Documentos/dpl$ git commit -m "Añadido índice de la asignatura DPL."
-[master (commit-raíz) 5bad5e0] Añadido índice de la asignatura DPL.
- 1 file changed, 2 insertions(+)
- create mode 100644 indice.txt
-dam@a108pc01:~/Documentos/dpl$ git status
-En la rama master
-nada para hacer commit, el árbol de trabajo está limpio
-```
-<a name="item5"></a>
-## Tarea: Modificación de ficheros
-
-- Cambiar el fichero indice.txt para que contenga lo siguiente:
-  - Capítulo 1: Instalación de Git por el alumno XXX (donde XXX es el nombre del alumno)
-  - Capítulo 2: Flujo de trabajo básico
-  - Capítulo 3: Gestión de ramas
-  - Capítulo 4: Repositorios remotos
-- Mostrar los cambios con respecto a la última versión guardada en el repositorio.
-- Hacer un commit de los cambios con el mensaje Añadido los capitulos 3 y 4.
-```code
-cat > indice.txt
-Capítulo 1: Instalación de Git por el alumno XXX _(donde XXX es el nombre del alumno)_
-Capítulo 2: Flujo de trabajo básico
-Capítulo 3: Gestión de ramas
-Capítulo 4: Repositorios remotos
-Ctrl+D
-git diff
-git add indice.txt
-git commit -m "Añadido los capitulos 3"
-```
-- __Anotaciones__: "git diff" nos permite ver los cambios que se han produciado en la rama
-- __Salida:__
-```code
-dam@a108pc01:~/Documentos/dpl$ cat >indice.txt
-Capítulo 1: Instalación de Git por el alumno Adonay _(donde Adonay es el nombre del alumno)_
-Capítulo 2: Flujo de trabajo básico
-Capítulo 3: Gestión de ramas
-                                            
-
-dam@a108pc01:~/Documentos/dpl$ git diff
-diff --git a/indice.txt b/indice.txt
-index ff4210e..b364195 100644
---- a/indice.txt
-+++ b/indice.txt
-@@ -1,2 +1,5 @@
--Capitulo 1: Instalacion de Git por el Alumno Adonay
--Capitulo 2: Flujo de trabajo basico
-+Capítulo 1: Instalación de Git por el alumno Adonay_(donde Adonay es el nombre del alumno)_
-+Capítulo 2: Flujo de trabajo básico
-+Capítulo 3: Gestión de ramas
-+
-+
-dam@a108pc01:~/Documentos/dpl$ git add indice.txt
-dam@a108pc01:~/Documentos/dpl$ git commit -m "Añadido los capitulos 3"
-[master d1c3c2d] Añadido los capitulos 3
- 1 file changed, 5 insertions(+), 2 deletions(-)
-```
-<a name="item6"></a>
-## Tarea: Historial
-
-- Mostrar los cambios de la última versión del repositorio con respecto a la anterior.
-- Cambiar el mensaje del último commit por Añadido el capitulo sobre gestión de ramas al índice.
-- Volver a mostrar los últimos cambios del repositorio.
-```code
-git show
-git commit --amend -m "Añadido el capitulo sobre gestión de ramas al índice."
-git show
-```
-- __Salida:__
-```code
-dam@a108pc01:~/Documentos/dpl$ git show
-commit d1c3c2dbb0a82b74ba0ac268adc8cee773a3a962 (HEAD -> master)
-Author: adogonz23 <adogonzalez75@gmail.com>
-Date:   Tue Oct 3 16:15:22 2023 +0100
-
-    Añadido los capitulos 3
-
-diff --git a/indice.txt b/indice.txt
-index ff4210e..b364195 100644
---- a/indice.txt
-+++ b/indice.txt
-@@ -1,2 +1,5 @@
--Capitulo 1: Instalacion de Git por el Alumno Adonay
--Capitulo 2: Flujo de trabajo basico
-+Capítulo 1: Instalación de Git por el alumno Adonay_(donde Adonay es el nombre del alumno)_
-+Capítulo 2: Flujo de trabajo básico
-+Capítulo 3: Gestión de ramas
-+
-+
-dam@a108pc01:~/Documentos/dpl$ git commit --amend -m "Añadido el capitulo sobre gestión de ramas al índice."
-[master f4d7d70] Añadido el capitulo sobre gestión de ramas al índice.
- Date: Tue Oct 3 16:15:22 2023 +0100
- 1 file changed, 5 insertions(+), 2 deletions(-)
-
-dam@a108pc01:~/Documentos/dpl$ git show
-commit f4d7d70ad1dd6e56c0089488f76a01f920db7380 (HEAD -> master)
-Author: adogonz23 <adogonzalez75@gmail.com>
-Date:   Tue Oct 3 16:15:22 2023 +0100
-
-    Añadido el capitulo sobre gestión de ramas al índice.
-
-diff --git a/indice.txt b/indice.txt
-index ff4210e..b364195 100644
---- a/indice.txt
-+++ b/indice.txt
-@@ -1,2 +1,5 @@
--Capitulo 1: Instalacion de Git por el Alumno Adonay
--Capitulo 2: Flujo de trabajo basico
-+Capítulo 1: Instalación de Git por el alumno Adonay _(donde Adonay es el nombre del alumno)_
-+Capítulo 2: Flujo de trabajo básico
-+Capítulo 3: Gestión de ramas
-+
-+
-
-```
-Fin de tarea  
 </div>
+
