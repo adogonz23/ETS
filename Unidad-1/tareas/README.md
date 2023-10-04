@@ -4,11 +4,11 @@
 
 ## indice
 - [Tarea de configuracion](#item1)
-- ## Tarea: Creación de un repositorio
-- ## Tarea: Comprobar el estado del repositorio
-- ## Tarea: Realizando Commit´s
-- ## Tarea: Modificación de ficheros
-- [Tarea: Historial](##Tarea:Historial)
+- [ Tarea: Creación de un repositorio](#item2)
+- [Tarea: Comprobar el estado del repositorio](#item3)
+- [Tarea: Realizando Commit´s](#item4)
+- [Tarea: Modificación de ficheros](#item5)
+- [Tarea: Historial](#item6)
 
 ## Tarea de configuracion
 <a name="item1"></a>
@@ -22,6 +22,7 @@ Configurar Git definiendo el nombre del usuario, el correo electrónico y activa
   git config --list
 ```
 ## Tarea: Creación de un repositorio
+<a name="item2"></a>
 Crear un repositorio nuevo con el nombre dpl y mostrar su contenido.
 ```code
  mkdir dpl
@@ -55,6 +56,7 @@ ayuda:
  ayuda: 	git branch -m <nombre>
  Inicializado repositorio Git vacío en /home/dam/Documentos/dpl/.git/
 ```
+<a name="item3"></a>
 ## Tarea: Comprobar el estado del repositorio
 - Comprobar el estado del repositorio.
 
@@ -117,6 +119,7 @@ Cambios a ser confirmados:
   (usa "git rm --cached <archivo>..." para sacar del área de stage)
 	nuevos archivos: indice.txt
 ```
+<a name="item4"></a>
 ## Tarea: Realizando Commit´s
 
 Realizar un commit de los últimos cambios con el mensaje Añadido índice de la asignatura DPL. y ver el estado del repositorio.
@@ -134,6 +137,7 @@ dam@a108pc01:~/Documentos/dpl$ git status
 En la rama master
 nada para hacer commit, el árbol de trabajo está limpio
 ```
+<a name="item5"></a>
 ## Tarea: Modificación de ficheros
 
 - Cambiar el fichero indice.txt para que contenga lo siguiente:
@@ -180,6 +184,7 @@ dam@a108pc01:~/Documentos/dpl$ git commit -m "Añadido los capitulos 3"
 [master d1c3c2d] Añadido los capitulos 3
  1 file changed, 5 insertions(+), 2 deletions(-)
 ```
+<a name="item6"></a>
 ## Tarea: Historial
 
 - Mostrar los cambios de la última versión del repositorio con respecto a la anterior.
