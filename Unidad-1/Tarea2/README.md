@@ -1,5 +1,7 @@
 <div aling= "center">
 
+ BY : Adonay González Gutiérrez
+
 # Gestion avanzada de git
 
 ## indice
