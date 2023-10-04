@@ -3,14 +3,15 @@
 # Gestion basica de git
 
 ## indice
-- [Tarea de configuracion](##_Tarea_de_configuracion)
+- [Tarea de configuracion](item1)
 - ## Tarea: Creación de un repositorio
 - ## Tarea: Comprobar el estado del repositorio
 - ## Tarea: Realizando Commit´s
 - ## Tarea: Modificación de ficheros
 - [Tarea: Historial](##Tarea:Historial)
 
-##_Tarea_de_configuracion
+## Tarea de configuracion
+<a name="item1"></a>
 
 Configurar Git definiendo el nombre del usuario, el correo electrónico y activar el coloreado de la salida. Mostrar la configuración final.
 
