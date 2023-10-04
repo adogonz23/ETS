@@ -4,7 +4,7 @@
 
 ## indice
 
-[tareas de Configuracion](Tarea de configuracion)
+[Tareas de Configuracion](##Taraedeconfiracion)
 
 ## Tarea de configuracion
 
