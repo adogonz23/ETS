@@ -2,6 +2,10 @@
 
 # Gestion basica de git
 
+## indice
+
+[Tareas de configuracion](Tareas de configuracion)
+
 ## Tarea de configuracion
 
 Configurar Git definiendo el nombre del usuario, el correo electrónico y activar el coloreado de la salida. Mostrar la configuración final.
