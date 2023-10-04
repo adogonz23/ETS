@@ -8,7 +8,7 @@
 - ## Tarea: Comprobar el estado del repositorio
 - ## Tarea: Realizando Commit´s
 - ## Tarea: Modificación de ficheros
-- [Tarea: Historial](##-Tarea:-Historial)
+- [Tarea: Historial](##Tarea:Historial)
 
 ## Tarea de configuracion
 
