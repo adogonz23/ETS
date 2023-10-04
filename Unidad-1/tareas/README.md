@@ -3,7 +3,7 @@
 # Gestion basica de git
 
 ## indice
-- [Tarea de configuracion](item1)
+- [Tarea de configuracion](#item1)
 - ## Tarea: Creación de un repositorio
 - ## Tarea: Comprobar el estado del repositorio
 - ## Tarea: Realizando Commit´s
