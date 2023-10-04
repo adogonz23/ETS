@@ -24,7 +24,7 @@ Configurar Git definiendo el nombre del usuario, el correo electrónico y activa
 ## Tarea: Creación de un repositorio
 <a name="item2"></a>
 Crear un repositorio nuevo con el nombre dpl y mostrar su contenido.
-
+- __Anotaciones__:  "mkdir" comando para la creacion del repositorio
 ```code
  mkdir dpl
  cd dpl
@@ -34,6 +34,7 @@ Crear un repositorio nuevo con el nombre dpl y mostrar su contenido.
  dam@a108pc01:~/Documentos$ mkdir dpl
  dam@a108pc01:~/Documentos$ cd dpl
 ```
+- __Anotaciones__:"git init" inicializa el repositorio y "git ls -la" muestra los archivos dentro del repositorio 
 
 ```code
 - git init
@@ -84,6 +85,7 @@ En la rama master
 
 No hay commits todavía no hay nada para confirmar (crea/copia archivos y usa "git add" para hacerles seguimiento)
 ```
+- __Anotaciones__: "cat > nombrex.txt" crear un archivo y añadirle contenido  
 ```code
  cat > indice.txt
  Capítulo 1: Instalación de Git por el alumno XXX
@@ -126,10 +128,12 @@ Cambios a ser confirmados:
 ## Tarea: Realizando Commit´s
 
 Realizar un commit de los últimos cambios con el mensaje Añadido índice de la asignatura DPL. y ver el estado del repositorio.
+- __Anotaciones__:"git commit-m" te permite guardar los cambios realizados en la rama
 ```code
 git commit -m "Añadido índice de la asignatura DPL."
 git status
 ```
+
 - __Salida:__
 ```code
 dam@a108pc01:~/Documentos/dpl$ git commit -m "Añadido índice de la asignatura DPL."
@@ -161,6 +165,7 @@ git diff
 git add indice.txt
 git commit -m "Añadido los capitulos 3"
 ```
+- __Anotaciones__: "git diff" nos permite ver los cambios que se han produciado en la rama
 - __Salida:__
 ```code
 dam@a108pc01:~/Documentos/dpl$ cat >indice.txt
