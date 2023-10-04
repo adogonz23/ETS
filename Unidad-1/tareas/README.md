@@ -24,20 +24,22 @@ Configurar Git definiendo el nombre del usuario, el correo electrónico y activa
 ## Tarea: Creación de un repositorio
 <a name="item2"></a>
 Crear un repositorio nuevo con el nombre dpl y mostrar su contenido.
+
 ```code
  mkdir dpl
  cd dpl
 ```
-- Salida:
+- __Salida:__
 ```
  dam@a108pc01:~/Documentos$ mkdir dpl
  dam@a108pc01:~/Documentos$ cd dpl
 ```
+
 ```code
 - git init
 - ls -la
 ```
-- Salida:
+- __Salida:__
 ```
  dam@a108pc01:~/Documentos/dpl$ ls -la
  total 8
@@ -71,10 +73,11 @@ ayuda:
 - Añadir el fichero a la zona de intercambio temporal.
 
 - Volver a comprobar una vez más el estado del repositorio.
+
 ```code
 git status
 ```
-- Salida:
+- __Salida:__
 ```code
  dam@a108pc01:~/Documentos/dpl$  git status
 En la rama master
@@ -86,7 +89,7 @@ No hay commits todavía no hay nada para confirmar (crea/copia archivos y usa "g
  Capítulo 1: Instalación de Git por el alumno XXX
  Capítulo 2: Flujo de trabajo básico
 ```
-- Salida:
+- __Salida:__
 ```code
 dam@a108pc01:~/Documentos/dpl$ cat > indice.txt
 Capitulo 1: Instalacion de Git por el Alumno Adonay
@@ -97,7 +100,7 @@ git status
 git add indice.txt
 git status
 ```
-- Salida:
+- __Salida:__
 ```code
 dam@a108pc01:~/Documentos/dpl$ git status
 En la rama master
@@ -127,7 +130,7 @@ Realizar un commit de los últimos cambios con el mensaje Añadido índice de la
 git commit -m "Añadido índice de la asignatura DPL."
 git status
 ```
-- Salida:
+- __Salida:__
 ```code
 dam@a108pc01:~/Documentos/dpl$ git commit -m "Añadido índice de la asignatura DPL."
 [master (commit-raíz) 5bad5e0] Añadido índice de la asignatura DPL.
@@ -158,7 +161,7 @@ git diff
 git add indice.txt
 git commit -m "Añadido los capitulos 3"
 ```
-- Salida:
+- __Salida:__
 ```code
 dam@a108pc01:~/Documentos/dpl$ cat >indice.txt
 Capítulo 1: Instalación de Git por el alumno Adonay _(donde Adonay es el nombre del alumno)_
@@ -195,7 +198,7 @@ git show
 git commit --amend -m "Añadido el capitulo sobre gestión de ramas al índice."
 git show
 ```
-- Salida:
+- __Salida:__
 ```code
 dam@a108pc01:~/Documentos/dpl$ git show
 commit d1c3c2dbb0a82b74ba0ac268adc8cee773a3a962 (HEAD -> master)
@@ -242,5 +245,5 @@ index ff4210e..b364195 100644
 +
 
 ```
-
+Fin de tarea  
 </div>
