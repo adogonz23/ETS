@@ -35,10 +35,13 @@ dam@a108pc01:~/Documentos$ cd libro/
 
 - Mostrar el historial de cambios del repositorio.
 - Crear la carpeta capítulos y crear dentro de ella el fichero capitulo1.txt con el siguiente texto: "Git es un sistema de control de versiones ideado por Linus Torvalds."
-- __comandos:__
+
+<details>
+<summary>Comandos</summary>
   - git show 
   - mkdir capitulos 
   - cat > capitulos/capitulo.txt
+</details>
 - Salida
   
 ```code
@@ -92,7 +95,8 @@ Git es un sistema de control de versiones ideado por Linus Torvalds.
  ## Ejercicio 2
 
 - Crear el fichero capitulo2.txt en la carpeta capítulos con el siguiente texto: "El flujo de trabajo básico con Git consiste en: 1- Hacer cambios en el repositorio. 2- Añadir los cambios a la zona de intercambio temporal. 3- Hacer un commit de los cambios".
-  - __Comandos:__ "cat > capitulos/capitulo2.txt"
+  - __Comandos:__ 
+    - cat > capitulos/capitulo2.txt
 <detail>
   ```code
     dam@a108pc01:~/Documentos/libro$ cat > capitulos/capitulo2
