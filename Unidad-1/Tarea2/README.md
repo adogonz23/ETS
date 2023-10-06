@@ -101,12 +101,11 @@ Git es un sistema de control de versiones ideado por Linus Torvalds.
 - Crear el fichero capitulo2.txt en la carpeta capítulos con el siguiente texto: "El flujo de trabajo básico con Git consiste en: 1- Hacer cambios en el repositorio. 2- Añadir los cambios a la zona de intercambio temporal. 3- Hacer un commit de los cambios".
   - __Comandos:__ 
     - cat > capitulos/capitulo2.txt
-<detail>
-  ```code
+
+ ```code
     dam@a108pc01:~/Documentos/libro$ cat > capitulos/capitulo2
   El flujo de trabajo básico con Git consiste en: 1- Hacer cambios en el repositorio. 2- Añadir los cambios a la zona de intercambio temporal. 3- Hacer un commit de los cambios
   ```
-</detail>
 
 - Añadir los cambios a la zona de intercambio temporal.
 - Hacer un commit de los cambios con el mensaje Añadido capítulo 2.
