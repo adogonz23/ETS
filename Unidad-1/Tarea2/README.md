@@ -68,7 +68,9 @@ Git es un sistema de control de versiones ideado por Linus Torvalds.dam@a108pc01
   - git add  
   - git commit -m git show
 </details>
+
 - Salida:
+  
 ```code
 ~/Documentos/libro$ git add .
 dam@a108pc01:~/Documentos/libro$ git commit -m"aguacate"
