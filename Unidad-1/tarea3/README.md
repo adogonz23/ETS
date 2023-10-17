@@ -142,22 +142,91 @@ Fast-forward (no commit created; -m option ignored)
 
 **Salida**:
 ```code
+dam@a108pc01:~/Documentos/ETS$ git checkout main
+M	Unidad-1/tarea3/README.md
+Ya en 'main'
+Tu rama está adelantada a 'origin/main' por 1 commit.
+  (usa "git push" para publicar tus commits locales)
+dam@a108pc01:~/Documentos/ETS$ echo "hola" >> 2.txt
+dam@a108pc01:~/Documentos/ETS$ git add .
+dam@a108pc01:~/Documentos/ETS$ git commit -m"hola en 2.txt"
+[main af2abef] hola en 2.txt
+ 2 files changed, 114 insertions(+), 3 deletions(-)
+```
+Posicionarse en la rama v0.2 y poner Adios en el fichero "1.txt" y hacer commit. <br>
 
-``
-
-
-
-
-
-
-
-<a name="subirRama"></a>
+Posicionarse de nuevo en la rama master y hacer un merge con la rama v0.2
 
 <details>
 
 <summary>Comandos</summary>
 
+- git checkout v0.2
+- echo "Adios" >> 2.txt
+- git add .
+- git commit -m"añadiendo adios 2.txt"
+- git checkout main
+- git merge v0.2
+- vim 2.txt
+- git add .
+- git commit -m"arregalndo merge en 1.txt"
 </details>
+
+**Salida**:
+```code
+dam@a108pc01:~/Documentos/ETS$ git checkout v0.2 
+Cambiado a rama 'v0.2'
+dam@a108pc01:~/Documentos/ETS$ echo "Adios" >> 2.txt
+dam@a108pc01:~/Documentos/ETS$ git add .
+dam@a108pc01:~/Documentos/ETS$ git commit -m"añadiendo adios 2.txt"
+[v0.2 056de3e] añadiendo adios 2.txt
+ 1 file changed, 1 insertion(+)
+ dam@a108pc01:~/Documentos/ETS$ git merge v0.2
+Auto-fusionando 2.txt
+CONFLICTO (contenido): Conflicto de fusión en 2.txt
+Fusión automática falló; arregle los conflictos y luego realice un commit con el resultado.
+dam@a108pc01:~/Documentos/ETS$ vim 2.txt
+No se ha encontrado la orden «vim», pero se puede instalar con:
+apt install vim         # version 2:8.2.3995-1ubuntu2.12, or
+apt install vim-tiny    # version 2:8.2.3995-1ubuntu2.12
+apt install vim-athena  # version 2:8.2.3995-1ubuntu2.12
+apt install vim-gtk3    # version 2:8.2.3995-1ubuntu2.12
+apt install vim-nox     # version 2:8.2.3995-1ubuntu2.12
+apt install neovim      # version 0.6.1-3
+Solicite al administrador que instale uno de ellos.
+dam@a108pc01:~/Documentos/ETS$ git add .
+dam@a108pc01:~/Documentos/ETS$  nano 2.txt
+dam@a108pc01:~/Documentos/ETS$ nano 2.txt
+dam@a108pc01:~/Documentos/ETS$ git add .
+dam@a108pc01:~/Documentos/ETS$ git commit -m"arreglando merge"
+[main 440e665] arreglando merge
+
+
+```
+
+
+<a name="borrarRama"></a>
+
+## Borrar rama
+
+crear un tag **V0.2** <br>
+Borrar la rama **v0.2**
+
+<details>
+
+<summary>Comandos</summary>
+
+- git tag v0.2
+- git brach -d v0.2
+
+</details>
+
+**Salida**
+```code
+dam@a108pc01:~/Documentos/ETS$ git tag v0.2
+dam@a108pc01:~/Documentos/ETS$ git tag -d v0.2
+Etiqueta 'v0.2' eliminada (era 440e665)
+```
 
 
 </div>
