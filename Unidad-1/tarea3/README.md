@@ -205,7 +205,7 @@ dam@a108pc01:~/Documentos/ETS$ git commit -m"arreglando merge"
 ```
 
 
-<a name="borrarRama"></a>
+<a name="borrarRamas"></a>
 
 ## Borrar rama
 
