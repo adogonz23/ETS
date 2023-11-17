@@ -15,6 +15,14 @@ Adonay González Gutiérrez
 - [Especificación Casos de Uso](#especificación-casos-de-uso)
   - [Se registra](#se-registra)
   - [Programa Citas](#programa-citas)
+  - [Actualizaciones](#actualizaciones)
+  - [Configuraciones](#configuraciones)
+  - [Gestion de recursos](#gestion-de-recursos)
+  - [Realaizan tareas](#realaizan-tareas)
+  - [Aceden al historial](#aceden-al-historial)
+  - [Prescribe tratamientos](#prescribe-tratamientos)
+  - [Realiza Diagnosticos](#realiza-diagnosticos)
+  - [Asigna tareas](#asigna-tareas)
 
 
 
@@ -137,185 +145,116 @@ El sistema de gestión hospitalaria tiene como objetivo mejorar la eficiencia y 
   |Fecha | 2023-11-15 |
 
 
-
-   |  Caso de Uso	CU | XXX  |
+### Actualizaciones
+   |  Caso de Uso	CU | Actualizaciones  |
   |---|---|
   | Fuentes  | [Ejercicio](#ejercicio) |
-  | Actor  |  _Actores que participan en el caso de uso_ |
-  | Descripción | _Descripción del caso de uso_  |
-  | Flujo básico | _Descripción paso a paso de la ejecución. (1->2->3.)_ |
-  | Pre-condiciones | _Que debe ocurrir con anterioridad_  |  
-  | Post-condiciones  | _Que debe ocurrir con posterioridad_  |  
-  |  Requerimientos | _Que debe de exister para que el caso de uso se ejecute. Ej: Tarjeta de crédito_  |
+  | Actor  |  Administrador |
+  | Descripción | el administrador actuliza la base de datos  |
+  | Flujo básico |  |
+  | Pre-condiciones | debe autenticarse antes |  
+  | Post-condiciones  |   |  
+  |  Requerimientos | debe autenticarse |
   |  Notas |  _Notas adicionales_ |
   | Autor  | Adonay González Gutiérrez|
   |Fecha | 2023-11-15 |
 
 
-
-   |  Caso de Uso	CU | XXX  |
+### Configuraciones
+   |  Caso de Uso	CU | Configuraciones |
   |---|---|
   | Fuentes  | [Ejercicio](#ejercicio)  |
-  | Actor  |  _Actores que participan en el caso de uso_ |
-  | Descripción | _Descripción del caso de uso_  |
-  | Flujo básico | _Descripción paso a paso de la ejecución. (1->2->3.)_ |
-  | Pre-condiciones | _Que debe ocurrir con anterioridad_  |  
-  | Post-condiciones  | _Que debe ocurrir con posterioridad_  |  
-  |  Requerimientos | _Que debe de exister para que el caso de uso se ejecute. Ej: Tarjeta de crédito_  |
+  | Actor  | Administrador |
+  | Descripción | Configura la base de datos  |
+  | Flujo básico |  |
+  | Pre-condiciones | _debe estar atenticado  |  
+  | Post-condiciones  |  |  
+  |  Requerimientos | debe estar autenticado  |
   |  Notas |  _Notas adicionales_ |
   | Autor  | Adonay González Gutiérrez |
   |Fecha | 2023-11-15 |
 
-
-   |  Caso de Uso	CU | XXX  |
+### Gestion de recursos
+   |  Caso de Uso	CU | Gestiona recursos |
   |---|---|
   | Fuentes  |[Ejercicio](#ejercicio)  |
-  | Actor  |  _Actores que participan en el caso de uso_ |
-  | Descripción | _Descripción del caso de uso_  |
-  | Flujo básico | _Descripción paso a paso de la ejecución. (1->2->3.)_ |
-  | Pre-condiciones | _Que debe ocurrir con anterioridad_  |  
-  | Post-condiciones  | _Que debe ocurrir con posterioridad_  |  
-  |  Requerimientos | _Que debe de exister para que el caso de uso se ejecute. Ej: Tarjeta de crédito_  |
+  | Actor  |  Administrador|
+  | Descripción | gestiona los recursos del hospital |
+  | Flujo básico | se Autentica realiza las gestiones, que pueden ser sobre las camas , los equipos medicos y suministros  |
+  | Pre-condiciones | autenticar |  
+  | Post-condiciones  |  |  
+  |  Requerimientos | debe auntenticarse  |
   |  Notas |  _Notas adicionales_ |
   | Autor  | Adonay González Gutiérrez |
   |Fecha | 2023-11-15 |
 
-
-   |  Caso de Uso	CU | XXX  |
+### Realaizan tareas
+   |  Caso de Uso	CU | realiza tareas  |
   |---|---|
   | Fuentes  | [Ejercicio](#ejercicio)  |
-  | Actor  |  _Actores que participan en el caso de uso_ |
-  | Descripción | _Descripción del caso de uso_  |
-  | Flujo básico | _Descripción paso a paso de la ejecución. (1->2->3.)_ |
-  | Pre-condiciones | _Que debe ocurrir con anterioridad_  |  
-  | Post-condiciones  | _Que debe ocurrir con posterioridad_  |  
-  |  Requerimientos | _Que debe de exister para que el caso de uso se ejecute. Ej: Tarjeta de crédito_  |
+  | Actor  |  Administrador|
+  | Descripción | _el administrador puede realizar diferentes tareas |
+  | Flujo básico | _se autentica luego realiza las tareas que pueden ser la facturacion y procesamiento de seguros medicos|
+  | Pre-condiciones | autenticarse  |  
+  | Post-condiciones  |  |  
+  |  Requerimientos | debe atenticarse |
   |  Notas |  _Notas adicionales_ |
   | Autor  | Adonay González Gutiérrez |
   |Fecha | 2023-11-15 |
 
-
-   |  Caso de Uso	CU | XXX  |
+### Aceden al historial
+   |  Caso de Uso	CU | accede al historial  |
   |---|---|
   | Fuentes  | [Ejercicio](#ejercicio) |
-  | Actor  |  _Actores que participan en el caso de uso_ |
-  | Descripción | _Descripción del caso de uso_  |
-  | Flujo básico | _Descripción paso a paso de la ejecución. (1->2->3.)_ |
-  | Pre-condiciones | _Que debe ocurrir con anterioridad_  |  
-  | Post-condiciones  | _Que debe ocurrir con posterioridad_  |  
-  |  Requerimientos | _Que debe de exister para que el caso de uso se ejecute. Ej: Tarjeta de crédito_  |
+  | Actor  | Enfermero y medico |
+  | Descripción | el enfermero y el medico puede acceder al historial del paciendo y actilaizarlo  |
+  | Flujo básico | debe autenticarse, accede al historial, puede actualizarlo |
+  | Pre-condiciones |  |  
+  | Post-condiciones  |  |  
+  |  Requerimientos |debe autenticarse  |
   |  Notas |  _Notas adicionales_ |
   | Autor  |Adonay González Gutiérrez |
   |Fecha | 2023-11-15 |
 
-
-   |  Caso de Uso	CU | XXX  |
+### Prescribe tratamientos
+   |  Caso de Uso	CU | Prescribe tratamientos |
   |---|---|
   | Fuentes  | [Ejercicio](#ejercicio)  |
-  | Actor  |  _Actores que participan en el caso de uso_ |
-  | Descripción | _Descripción del caso de uso_  |
-  | Flujo básico | _Descripción paso a paso de la ejecución. (1->2->3.)_ |
-  | Pre-condiciones | _Que debe ocurrir con anterioridad_  |  
-  | Post-condiciones  | _Que debe ocurrir con posterioridad_  |  
-  |  Requerimientos | _Que debe de exister para que el caso de uso se ejecute. Ej: Tarjeta de crédito_  |
+  | Actor  |  Medico |
+  | Descripción | prescribe tratamientos al paciente  |
+  | Flujo básico |  |
+  | Pre-condiciones |   |  
+  | Post-condiciones  |   |  
+  |  Requerimientos | Debe autenticar |
   |  Notas |  _Notas adicionales_ |
   | Autor  | Adonay González Gutiérrez |
   |Fecha | 2023-11-15 |
 
-
-   |  Caso de Uso	CU | XXX  |
+### Realiza Diagnosticos
+   |  Caso de Uso	CU | Realiza Diagnosticos  |
   |---|---|
   | Fuentes  | [Ejercicio](#ejercicio) |
-  | Actor  |  _Actores que participan en el caso de uso_ |
-  | Descripción | _Descripción del caso de uso_  |
-  | Flujo básico | _Descripción paso a paso de la ejecución. (1->2->3.)_ |
-  | Pre-condiciones | _Que debe ocurrir con anterioridad_  |  
-  | Post-condiciones  | _Que debe ocurrir con posterioridad_  |  
-  |  Requerimientos | _Que debe de exister para que el caso de uso se ejecute. Ej: Tarjeta de crédito_  |
+  | Actor  | Medico |
+  | Descripción | realiza diagnosticos a los pacientes |
+  | Flujo básico |  |
+  | Pre-condiciones |  |  
+  | Post-condiciones  |   |  
+  |  Requerimientos | Debe autenticar |
   |  Notas |  _Notas adicionales_ |
   | Autor  | Adonay González Gutiérrez |
   |Fecha | 2023-11-15 |
 
-
-   |  Caso de Uso	CU | XXX  |
+### Asigna tareas
+   |  Caso de Uso	CU | Asigna tareas |
   |---|---|
   | Fuentes  | [Ejercicio](#ejercicio) |
-  | Actor  |  _Actores que participan en el caso de uso_ |
-  | Descripción | _Descripción del caso de uso_  |
-  | Flujo básico | _Descripción paso a paso de la ejecución. (1->2->3.)_ |
-  | Pre-condiciones | _Que debe ocurrir con anterioridad_  |  
-  | Post-condiciones  | _Que debe ocurrir con posterioridad_  |  
-  |  Requerimientos | _Que debe de exister para que el caso de uso se ejecute. Ej: Tarjeta de crédito_  |
+  | Actor  |  Medico |
+  | Descripción | Asigna tareasa los enfermeros |
+  | Flujo básico |  |
+  | Pre-condiciones |   |  
+  | Post-condiciones  |   |  
+  |  Requerimientos |   |
   |  Notas |  _Notas adicionales_ |
   | Autor  | Adonay González Gutiérrez |
   |Fecha | 2023-11-15 |
-
-
-   |  Caso de Uso	CU | XXX  |
-  |---|---|
-  | Fuentes  | [Ejercicio](#ejercicio)  |
-  | Actor  |  _Actores que participan en el caso de uso_ |
-  | Descripción | _Descripción del caso de uso_  |
-  | Flujo básico | _Descripción paso a paso de la ejecución. (1->2->3.)_ |
-  | Pre-condiciones | _Que debe ocurrir con anterioridad_  |  
-  | Post-condiciones  | _Que debe ocurrir con posterioridad_  |  
-  |  Requerimientos | _Que debe de exister para que el caso de uso se ejecute. Ej: Tarjeta de crédito_  |
-  |  Notas |  _Notas adicionales_ |
-  | Autor  | Adonay González Gutiérrez |
-  |Fecha | 2023-11-15 |
-
-
-   |  Caso de Uso	CU | XXX  |
-  |---|---|
-  | Fuentes  | [Ejercicio](#ejercicio)  |
-  | Actor  |  _Actores que participan en el caso de uso_ |
-  | Descripción | _Descripción del caso de uso_  |
-  | Flujo básico | _Descripción paso a paso de la ejecución. (1->2->3.)_ |
-  | Pre-condiciones | _Que debe ocurrir con anterioridad_  |  
-  | Post-condiciones  | _Que debe ocurrir con posterioridad_  |  
-  |  Requerimientos | _Que debe de exister para que el caso de uso se ejecute. Ej: Tarjeta de crédito_  |
-  |  Notas |  _Notas adicionales_ |
-  | Autor  | Adonay González Gutiérrez |
-  |Fecha | 2023-11-15 |
-
-
-   |  Caso de Uso	CU | XXX  |
-  |---|---|
-  | Fuentes  | [Ejercicio](#ejercicio)  |
-  | Actor  |  _Actores que participan en el caso de uso_ |
-  | Descripción | _Descripción del caso de uso_  |
-  | Flujo básico | _Descripción paso a paso de la ejecución. (1->2->3.)_ |
-  | Pre-condiciones | _Que debe ocurrir con anterioridad_  |  
-  | Post-condiciones  | _Que debe ocurrir con posterioridad_  |  
-  |  Requerimientos | _Que debe de exister para que el caso de uso se ejecute. Ej: Tarjeta de crédito_  |
-  |  Notas |  _Notas adicionales_ |
-  | Autor  | Adonay González Gutiérrez |
-  |Fecha | 2023-11-15 |
-
-
-   |  Caso de Uso	CU | XXX  |
-  |---|---|
-  | Fuentes  | [Ejercicio](#ejercicio)  |
-  | Actor  |  _Actores que participan en el caso de uso_ |
-  | Descripción | _Descripción del caso de uso_  |
-  | Flujo básico | _Descripción paso a paso de la ejecución. (1->2->3.)_ |
-  | Pre-condiciones | _Que debe ocurrir con anterioridad_  |  
-  | Post-condiciones  | _Que debe ocurrir con posterioridad_  |  
-  |  Requerimientos | _Que debe de exister para que el caso de uso se ejecute. Ej: Tarjeta de crédito_  |
-  |  Notas |  _Notas adicionales_ |
-  | Autor  | Adonay González Gutiérrez |
-  |Fecha | 2023-11-15 |
-
-
-   |  Caso de Uso	CU | XXX  |
-  |---|---|
-  | Fuentes  | [Ejercicio](#ejercicio) |
-  | Actor  |  _Actores que participan en el caso de uso_ |
-  | Descripción | _Descripción del caso de uso_  |
-  | Flujo básico | _Descripción paso a paso de la ejecución. (1->2->3.)_ |
-  | Pre-condiciones | _Que debe ocurrir con anterioridad_  |  
-  | Post-condiciones  | _Que debe ocurrir con posterioridad_  |  
-  |  Requerimientos | _Que debe de exister para que el caso de uso se ejecute. Ej: Tarjeta de crédito_  |
-  |  Notas |  _Notas adicionales_ |
-  | Autor  | Adonay González Gutiérrez |
-  |Fecha | 2023-11-15 |
+   
