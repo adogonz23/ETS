@@ -1,6 +1,6 @@
 <h1> Proyecto App Gestion Bibiloteca </h1>
 
-<h2>Documentancion sobre las diagramas de Casos de usos</h2>
+<h2>Documentancion sobre las diagramas de Casos de usos y Diagrama de clases</h2>
 
 <h2>Indice</h2>
 
@@ -11,6 +11,28 @@
   - [Bibliotecario](#bibliotecario)
 - [Especificacion de casos de uso](#especificacion-de-casos-de-uso)
   - [Busca libros](#busca-libros)
+  - [Busca libros](#busca-libros-1)
+  - [Busca libros](#busca-libros-2)
+  - [Busca libros](#busca-libros-3)
+  - [Busca libros](#busca-libros-4)
+  - [Busca libros](#busca-libros-5)
+  - [Busca libros](#busca-libros-6)
+  - [Busca libros](#busca-libros-7)
+  - [Busca libros](#busca-libros-8)
+  - [Busca libros](#busca-libros-9)
+  - [Busca libros](#busca-libros-10)
+  - [Busca libros](#busca-libros-11)
+- [Diagrama de Clases](#diagrama-de-clases)
+- [Clases](#clases)
+  - [Usuario](#usuario-1)
+  - [Bibliotecario](#bibliotecario-1)
+  - [Biblioteca](#biblioteca)
+  - [Libro](#libro)
+  - [CategoriaLibro](#categorialibro)
+  - [Cometario](#cometario)
+  - [Reserva](#reserva)
+  - [Evento](#evento)
+  - [Editorial](#editorial)
 
 
 
@@ -21,7 +43,7 @@ Desarrolla un sistema de llamado Gestión de Biblioteca que permita a los biblio
 
 Teniendo en cuenta lo anterior, nuestro sistema debe contemplar trabajar con la siguiente información:
 
-***<link href="https://github.com/jpexposito/docencia/tree/master/Primero/ETS/PROYECTO">Acceso a la información</link>***
+***<a href="https://github.com/jpexposito/docencia/tree/master/Primero/ETS/PROYECTO">Acceso a la información</a>***
 
 ## Diagrama de Cados de Uso
 
@@ -56,9 +78,9 @@ Teniendo en cuenta lo anterior, nuestro sistema debe contemplar trabajar con la 
 ## Especificacion de casos de uso
 
 ### Busca libros
- |  Caso de Uso	CU | Se registra  |
+ |  Caso de Uso	CU | Busca libros |
   |---|---|
-  | Fuentes  | <link href="https://github.com/jpexposito/docencia/tree/master/Primero/ETS/PROYECTO">***Enlace***</link> |
+  | Fuentes  | <a href="https://github.com/jpexposito/docencia/tree/master/Primero/ETS/PROYECTO">***Enlace***</a> |
   | Actor  |  Usuario|
   | Descripción | Busca libros en el sistema de la biblioteca  |
   | Flujo básico | |
@@ -68,3 +90,184 @@ Teniendo en cuenta lo anterior, nuestro sistema debe contemplar trabajar con la 
   |  Notas |  _Notas adicionales_ |
   | Autor  | Adonay González Gutiérrez |
   |Fecha | 2024-01-16 |
+
+  ### Busca libros
+ |  Caso de Uso	CU | Se registra  |
+  |---|---|
+  | Fuentes  | <a href="https://github.com/jpexposito/docencia/tree/master/Primero/ETS/PROYECTO">***Enlace***</a> |
+  | Actor  |  Usuario|
+  | Descripción | Busca libros en el sistema de la biblioteca  |
+  | Flujo básico | |
+  | Pre-condiciones |  |  
+  | Post-condiciones  | |  
+  |  Requerimientos |   |
+  |  Notas |  _Notas adicionales_ |
+  | Autor  | Adonay González Gutiérrez |
+  |Fecha | 2024-01-16 |
+
+
+  ### Busca libros
+ |  Caso de Uso	CU | Se registra  |
+  |---|---|
+  | Fuentes  | <a href="https://github.com/jpexposito/docencia/tree/master/Primero/ETS/PROYECTO">***Enlace***</a> |
+  | Actor  |  Usuario|
+  | Descripción | Busca libros en el sistema de la biblioteca  |
+  | Flujo básico | |
+  | Pre-condiciones |  |  
+  | Post-condiciones  | |  
+  |  Requerimientos |   |
+  |  Notas |  _Notas adicionales_ |
+  | Autor  | Adonay González Gutiérrez |
+  |Fecha | 2024-01-16 |
+
+  ### Busca libros
+ |  Caso de Uso	CU | Se registra  |
+  |---|---|
+  | Fuentes  | <a href="https://github.com/jpexposito/docencia/tree/master/Primero/ETS/PROYECTO">***Enlace***</a> |
+  | Actor  |  Usuario|
+  | Descripción | Busca libros en el sistema de la biblioteca  |
+  | Flujo básico | |
+  | Pre-condiciones |  |  
+  | Post-condiciones  | |  
+  |  Requerimientos |   |
+  |  Notas |  _Notas adicionales_ |
+  | Autor  | Adonay González Gutiérrez |
+  |Fecha | 2024-01-16 |
+
+  ### Busca libros
+ |  Caso de Uso	CU | Se registra  |
+  |---|---|
+  | Fuentes  | <a href="https://github.com/jpexposito/docencia/tree/master/Primero/ETS/PROYECTO">***Enlace***</a> |
+  | Actor  |  Usuario|
+  | Descripción | Busca libros en el sistema de la biblioteca  |
+  | Flujo básico | |
+  | Pre-condiciones |  |  
+  | Post-condiciones  | |  
+  |  Requerimientos |   |
+  |  Notas |  _Notas adicionales_ |
+  | Autor  | Adonay González Gutiérrez |
+  |Fecha | 2024-01-16 |
+
+  ### Busca libros
+ |  Caso de Uso	CU | Se registra  |
+  |---|---|
+  | Fuentes  | <a href="https://github.com/jpexposito/docencia/tree/master/Primero/ETS/PROYECTO">***Enlace***</a> |
+  | Actor  |  Usuario|
+  | Descripción | Busca libros en el sistema de la biblioteca  |
+  | Flujo básico | |
+  | Pre-condiciones |  |  
+  | Post-condiciones  | |  
+  |  Requerimientos |   |
+  |  Notas |  _Notas adicionales_ |
+  | Autor  | Adonay González Gutiérrez |
+  |Fecha | 2024-01-16 |
+
+  ### Busca libros
+ |  Caso de Uso	CU | Se registra  |
+  |---|---|
+  | Fuentes  | <a href="https://github.com/jpexposito/docencia/tree/master/Primero/ETS/PROYECTO">***Enlace***</a> |
+  | Actor  |  Usuario|
+  | Descripción | Busca libros en el sistema de la biblioteca  |
+  | Flujo básico | |
+  | Pre-condiciones |  |  
+  | Post-condiciones  | |  
+  |  Requerimientos |   |
+  |  Notas |  _Notas adicionales_ |
+  | Autor  | Adonay González Gutiérrez |
+  |Fecha | 2024-01-16 |
+
+  ### Busca libros
+ |  Caso de Uso	CU | Se registra  |
+  |---|---|
+  | Fuentes  | <a href="https://github.com/jpexposito/docencia/tree/master/Primero/ETS/PROYECTO">***Enlace***</a> |
+  | Actor  |  Usuario|
+  | Descripción | Busca libros en el sistema de la biblioteca  |
+  | Flujo básico | |
+  | Pre-condiciones |  |  
+  | Post-condiciones  | |  
+  |  Requerimientos |   |
+  |  Notas |  _Notas adicionales_ |
+  | Autor  | Adonay González Gutiérrez |
+  |Fecha | 2024-01-16 |
+
+  ### Busca libros
+ |  Caso de Uso	CU | Se registra  |
+  |---|---|
+  | Fuentes  | <a href="https://github.com/jpexposito/docencia/tree/master/Primero/ETS/PROYECTO">***Enlace***</a> |
+  | Actor  |  Usuario|
+  | Descripción | Busca libros en el sistema de la biblioteca  |
+  | Flujo básico | |
+  | Pre-condiciones |  |  
+  | Post-condiciones  | |  
+  |  Requerimientos |   |
+  |  Notas |  _Notas adicionales_ |
+  | Autor  | Adonay González Gutiérrez |
+  |Fecha | 2024-01-16 |
+
+  ### Busca libros
+ |  Caso de Uso	CU | Se registra  |
+  |---|---|
+  | Fuentes  | <a href="https://github.com/jpexposito/docencia/tree/master/Primero/ETS/PROYECTO">***Enlace***</a> |
+  | Actor  |  Usuario|
+  | Descripción | Busca libros en el sistema de la biblioteca  |
+  | Flujo básico | |
+  | Pre-condiciones |  |  
+  | Post-condiciones  | |  
+  |  Requerimientos |   |
+  |  Notas |  _Notas adicionales_ |
+  | Autor  | Adonay González Gutiérrez |
+  |Fecha | 2024-01-16 |
+
+  ### Busca libros
+ |  Caso de Uso	CU | Se registra  |
+  |---|---|
+  | Fuentes  | <a href="https://github.com/jpexposito/docencia/tree/master/Primero/ETS/PROYECTO">***Enlace***</a> |
+  | Actor  |  Usuario|
+  | Descripción | Busca libros en el sistema de la biblioteca  |
+  | Flujo básico | |
+  | Pre-condiciones |  |  
+  | Post-condiciones  | |  
+  |  Requerimientos |   |
+  |  Notas |  _Notas adicionales_ |
+  | Autor  | Adonay González Gutiérrez |
+  |Fecha | 2024-01-16 |
+
+  ### Busca libros
+ |  Caso de Uso	CU | Se registra  |
+  |---|---|
+  | Fuentes  | <a href="https://github.com/jpexposito/docencia/tree/master/Primero/ETS/PROYECTO">***Enlace***</a> |
+  | Actor  |  Usuario|
+  | Descripción | Busca libros en el sistema de la biblioteca  |
+  | Flujo básico | |
+  | Pre-condiciones |  |  
+  | Post-condiciones  | |  
+  |  Requerimientos |   |
+  |  Notas |  _Notas adicionales_ |
+  | Autor  | Adonay González Gutiérrez |
+  |Fecha | 2024-01-16 |
+
+## Diagrama de Clases 
+
+  <img src="diagramaClases/DiagramaDeClasesProyecto.png">
+
+## Clases 
+
+En el siguiente apartado tendremos las clases que usara nuestra app y los metodos qeu implementaran cada una de ellas.
+
+### Usuario
+
+### Bibliotecario
+
+### Biblioteca
+
+### Libro
+
+### CategoriaLibro
+
+### Cometario
+
+### Reserva
+
+### Evento
+
+### Editorial
